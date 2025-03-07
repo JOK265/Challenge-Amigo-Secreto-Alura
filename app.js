@@ -31,8 +31,8 @@ function adicionarAmigo() {
 }
 
 function sortearAmigo() {
-    if (amigos.length === 0) {
-        alert("A lista está vazia! Adicione amigos antes de sortear.");
+    if (amigos.length < 2) {
+        alert("Não há amigos suficientes! Adicione amigos antes de sortear.");
         return;
     }
     let max = amigos.length;
